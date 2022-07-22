@@ -6,7 +6,7 @@ exports.run = {
 				{ text: 'Tutorial', callback_data: isPrefix + 'tutorial' },
 				{ text: 'Command', callback_data: isPrefix + 'other' }
 			],
-			[{ text: 'Source Code', url: 'https://github.com/neoxr/telegram-bot/' }]
+			[{ text: 'Source Code', url: 'https://github.com/MRCRAZY19/telegram-bot' }]
 		])
 		if (command == 'tutorial') return client.button(tutorial(isPrefix), [
 			[{ text: 'Kembali', callback_data: isPrefix + 'start' }]
