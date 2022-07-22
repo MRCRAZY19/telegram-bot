@@ -23,11 +23,11 @@ module.exports = (bot) => {
 
 	if (bot) {
 
-		global.botid = bot.id
+		global.botid = bot.5552008595
 
-		global.botname = bot.first_name
+		global.botname = bot.HALF BOT
 
-		global.botuser = bot.username
+		global.botuser = bot.X_HalfBot
 
 	}
 
