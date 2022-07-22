@@ -1,11 +1,11 @@
-global.token = ''
+global.token = '5552008595:AAGKSnpP1OUWjbMxGujWG9Z53xvSvP0_uuM'
 عالمي . owner_id  =  '2057515577'
 عالمي . owner_user       =       'MrYOUCHN'
 global.APIs = { 
-	neoxr: 'https://api.neoxr.eu.org/ZILhx15V'
+	neoxr: 'https://api.neoxr.eu.org/api'
 }
 global.APIKeys = { 
-	'https://api.neoxr.eu.org/api': '5552008595:AAGKSnpP1OUWjbMxGujWG9Z53xvSvP0_uuM'
+	'https://api.neoxr.eu.org/api': 'ZILhx15V'
 }
 global.API = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
 
